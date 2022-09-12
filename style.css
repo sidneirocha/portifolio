@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&family=Syne:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;700&family=Syne:wght@700&display=swap');
+
+* {
+--primaria: #000000;
+--secundaria: #FF9900;
+--cinza: grey;
+--branco: white;
+box-sizing: border-box;
+  
+}
+
+
+body {
+  background-color: var(--primaria);
+  color: var(--branco);
+  margin-left: 0px;
+  margin-top: 0px;
+  margin-right: 0px;
+}
+
+a:link {
+  color: var(--secundaria);
+  text-decoration: none;
+}
+a:visited {
+  color: white;
+
+}
+
+a:hover {
+  color: var(--secundaria);
+}
+
+h1 {
+color: var(--branco);
+font-family: syne;
+font-size: 6.5rem;}
+
+h2 {
+  color: var(--branco);
+  font-family: syne;
+  font-size: 4.0rem;
+  line-height: normal;
+}
+ 
+p { font-family: space grotesk; 
+  font-weight: 100;
+  font-size: 18px;
+  line-height: 160%;
+}
+
+nav {
+  position:fixed;
+  width: 100%;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  padding: 48px 48px 0px 48px;
+  font-family: space grotesk;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content:space-between;
+}
+
+li {
+margin-left: 24px;  
+}
+
+.hero {
+  background-image: url(/img/header1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit:fill;
+  height: 100vh;
+  display: flex;
+  }
+
+.hero-content {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  display: flex;
+  padding: 0px 48px;
+  align-items: center;
+  top: 0;
+}
+
+footer {
+  display: grid;
+  flex-direction: row;
+}
+
+.perfil {
+  height: 100vh;
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.foto-perfil {
+  width: auto;
+  height: 50%;
+  margin-right: 72px;
+}
+
+.skills {
+  display: flex;
+  height: 100vh;  
+  height: 100%;
+  min-height: 900px;
+  background-color: #131313;
+  justify-content: center;
+}
+
+.w1200skills {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.barskill {
+    width: 100%;
+    border-radius: 2px;
+    height: 32px;
+    background: linear-gradient(90deg, #FF9900 60%, #ffffff 40%);
+    color: var(--secundaria);
+  }
+
+.programas {
+  display: grid;
+  gap: 48px;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-content: center;
+}
+
+.programas img {
+  width: 50%;
+display: flex;
+align-items: center;
+align-content: center;
+}
+
+.logo  {
+display: flex;
+justify-content: center;
+width: 120px;
+height: 120px;
+border-radius: 8px;
+background-color: #232323;
+
+}
+
+.logo:hover {
+background-color: var(--secundaria);
+transition: all 1s;
+}
+
+.logo svg {
+  width: 24px;
+  height: 24px;
+}
+
+.bp {
+  display: flex;
+  width: 55%;
+  flex-direction: column;
+  margin-top: 0px;
+  margin-right: 24px;
+}
+
+.logos-rodape {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  gap: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 72px;
+}
+
+.projetos {
+  width: 100%;
+  margin: auto;
+  max-width: 1200px;
+  margin-top: 144px;
+}
+
+.faleconosco {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.contato {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.contato-box {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding: 48px 48px;
+  width: 100%;
+  border-radius: 12px;
+  background-color: #232323;
+}
+
+.logos-rodape:hove {
+  fill-rule: var(--secundaria);
+  transition: all 1s;
+  }
+
+.texto-rodape {
+  text-align: center;
+  margin-top: 72px;
+}
+
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  justify-content: center;
+  margin: 0 12px;
+}
+
+.column img {
+  vertical-align: middle;
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 24px;
+  margin-right: 24px;
+}
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 1200px) {
+
+  
+  .column {
+    -ms-flex: 33%;
+    flex: 33%;
+    max-width: 100%;
+  }
+
+  .faleconosco {
+    width: auto;
+    padding: 0 24px;
+    margin-bottom: 72px;
+  }
+
+  .contato {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding: 0 12px;
+  }
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+
+.main {
+  overflow: hidden;
+}
+
+  .perfil {
+    display: grid;
+    padding: 24px 24px;
+    height: auto;
+  }
+
+  .perfil h2 {
+    margin-top: 100px;
+    height: auto;
+  }
+
+  .perfil img {
+    width: 100%;
+  }
+
+  .w1200skills {
+    display: grid;
+    justify-content: center;
+    gap: 48px;
+  }
+
+  .skills {
+    padding: 72px 0;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bp {
+    width: auto;
+    width: 100%;
+  }
+
+  .programas {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-content: center;
+  }
+
+
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  .faleconosco {
+    width: auto;
+    padding: 0 24px;
+    margin-bottom: 72px;
+  }
+
+  .contato {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding: 0 12px;
+  }
+}
